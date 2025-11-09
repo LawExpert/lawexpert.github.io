@@ -1,59 +1,67 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact - Omveer Singh Arya Advocate</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact - Omveer Singh Arya Advocate</title><link rel="stylesheet" href="css/style.css"></head>
 <body>
-  <header class="header"><nav class="navbar container">
-  <a class="brand" href="index.html">
-    <span class="logo"><img src="img/logo.svg" alt="logo" style="width:36px;height:36px;border-radius:6px"></span>
-    <h1>Omveer Singh Arya Advocate</h1>
-  </a>
-  <div class="nav-links">
+<header class="header">
+  <div class="container navbar">
+    <a href="index.html" class="brand"><span class="logo"><img src="img/logo.svg" alt="logo" style="width:32px;height:32px;border-radius:6px"></span><h1>Omveer Singh Arya Advocate</h1></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="contact.html">Contact Now</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu container" style="display:none">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
-    <a class="cta" href="contact.html">Contact Now</a>
   </div>
-</nav>
 </header>
-  <main class="container">
-    <section class="section">
-      <h2 class="section-title">Contact & Appointments</h2>
-      <p class="lead-muted">Call or write to book a consultation. Alternatively, use the form below and we will get back to you.</p>
 
-      <div class="contact-grid" style="margin-top:16px">
-        <div>
-          <div class="contact-card">
-            <h3 class="card-title">Get In Touch</h3>
-            <p class="card-sub">Chamber No. 509, Noida Civil Court Complex<br>Phone: +91-9313452979<br>Email: omveersingharya.adv@gmail.com</p>
-            <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
-            <form onsubmit="alert('This is a demo form. Please call or email to make an appointment.'); return false;">
-              <div class="form-group"><label style="color:var(--muted)">Name</label><input type="text" required></div>
-              <div class="form-group"><label style="color:var(--muted)">Email</label><input type="email" required></div>
-              <div class="form-group"><label style="color:var(--muted)">Message</label><textarea rows="5" required></textarea></div>
-              <button class="btn" type="submit">Send Message</button>
-            </form>
-          </div>
+<main class="container">
+  <section class="section">
+    <h2 class="section-title">Contact & Appointments</h2>
+    <p class="lead-muted">Call or write to book a consultation. Alternatively, use the form below and we will get back to you.</p>
+    <div class="contact-grid" style="margin-top:16px">
+      <div>
+        <div class="contact-card">
+          <h3 class="card-title">Get In Touch</h3>
+          <p class="card-sub">Chamber No. 509, Noida Civil Court Complex<br>Phone: +91-9313452979<br>Email: omveersingharya.adv@gmail.com</p>
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+          <!-- Replace the action with your Formspree endpoint: https://formspree.io/f/your_form_id -->
+          <form id="contactForm" action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-group"><label style="color:var(--muted)">Name</label><input type="text" name="name" required></div>
+            <div class="form-group"><label style="color:var(--muted)">Email</label><input type="email" name="email" required></div>
+            <div class="form-group"><label style="color:var(--muted)">Message</label><textarea name="message" rows="5" required></textarea></div>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
         </div>
-
-        <aside>
-          <div class="contact-card">
-            <h4 style="color:var(--white);margin-top:0">Office Hours</h4>
-            <p style="color:var(--muted);margin:0 0 8px 0">Mon - Fri: 10:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM<br>Sun: Closed</p>
-            <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
-            <h4 style="color:var(--white);margin:0 0 8px 0">Quick Actions</h4>
-            <p style="margin:0"><a href="tel:+919313452979" style="color:var(--gold);text-decoration:none">Call: +91-9313452979</a></p>
-            <p style="margin:0"><a href="mailto:omveersingharya.adv@gmail.com" style="color:var(--gold);text-decoration:none">Email: omveersingharya.adv@gmail.com</a></p>
-          </div>
-        </aside>
       </div>
+      <aside>
+        <div class="contact-card">
+          <h4 style="color:var(--white);margin-top:0">Office Hours</h4>
+          <p style="color:var(--muted);margin:0 0 8px 0">Mon - Fri: 10:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM<br>Sun: Closed</p>
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+          <h4 style="color:var(--white);margin:0 0 8px 0">Quick Actions</h4>
+          <p style="margin:0"><a href="tel:+919313452979" style="color:var(--gold);text-decoration:none">Call: +91-9313452979</a></p>
+          <p style="margin:0"><a href="mailto:omveersingharya.adv@gmail.com" style="color:var(--gold);text-decoration:none">Email: omveersingharya.adv@gmail.com</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    © 2025 Omveer Singh Arya Advocate • Chamber No. 509, Noida Civil Court Complex • Phone: +91-9313452979 • Email: omveersingharya.adv@gmail.com
+  </div>
+</footer>
 
-    </section>
-  </main>
-  <footer class="footer"><div class="container">© 2025 Omveer Singh Arya Advocate</div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>
